@@ -4,7 +4,7 @@
 ## Wordpress:  
 接口文档：https://developer.wordpress.org/rest-api/reference/categories/#list-categories  
 接口初始化:  
-*以下为php代码，先初始化，其中用户名和密码是在wp后台用户生成的密钥。wp-load.php是wp安装好后根目录有的。  *
+*以下为php代码，先初始化，其中用户名和密码是在wp后台用户生成的密钥。wp-load.php是wp安装好后根目录有的。*  
 ````
 $user="root";
 $password="MI4h 7CA6 uOVh Muu9 RNm1 I07O";
@@ -29,7 +29,7 @@ $headers = array (
 ## Zblog
 接口文档：https://docs.zblogcn.com   
 接口初始化:  
-*localhost需要更换为您的域名或zblog安装位置，用户名和密码是您的zblog后台管理员账户密码*
+*localhost需要更换为您的域名或zblog安装位置，用户名和密码是您的zblog后台管理员账户密码*  
 ````
 $as="http://localhost/zb_system/api.php";
 $user="root";
@@ -48,7 +48,7 @@ if(time()-$nst>3600*24*6){
 }
 ````
 直接调用:  
-*curl_post_https这个方法本页由提供。  
+*curl_post_https这个方法本页由提供。*   
 ````
 if($token!=""){
 	$data=array(
