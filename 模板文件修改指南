@@ -1,3 +1,8 @@
+## 版权
+设置-外观-主题设置底部版本，或进入wp-copition表中更改。  
+模板：  
+wp-content/themes/saya/candidthemes/functions/hook-footer.php  
+footer.php  
 
 ## 每日一句
 修改在文章页面：content-single.php (the_content下方)  
