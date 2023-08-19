@@ -1,0 +1,40 @@
+
+## 每日一句
+修改在文章页面：content-single.php (the_content下方)  
+ ````
+                echo '<div id="hitokoto_all" style="font-size:18px;margin-top:20px;margin-bottom:-40px"><b>每日名言:</b>&nbsp&nbsp<span id="hitokoto">正在生成名言...</span></div>';
+                echo '<script src="https://v1.hitokoto.cn/?encode=js&c=h&select=%23hitokoto" defer></script>';
+````
+
+## 启动提示
+修改在index.php和singer.phpd (main上方或下方)  
+ ````
+<script>
+if(getCookie('ts')=="" || getCookie('ts')==null){
+     setCookie("ts","yes",3);
+     alert("本站内所有影像资源均为公开摄制和网络传播的情景表演 无色情、暴力等任何不良违法视频。\r\n本站禁止色情暴力内容，如有此内容联系网站管理员进行删除。");
+}
+function getCookie(cname)
+{
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0; i<ca.length; i++) 
+  {
+    var c = ca[i].trim();
+    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+  }
+  return "";
+}
+function setCookie(cname,cvalue,exdays)
+{
+  var d = new Date();
+  d.setTime(d.getTime()+(exdays*24*60*60*1000));
+  var expires = "expires="+d.toGMTString();
+  document.cookie = cname + "=" + cvalue + "; " + expires;
+}   
+</script>
+````
+
+
+
+
